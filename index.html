@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Hexagonal Grid</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://kit.fontawesome.com/cf4adf0ae9.js"></script>
+</head>
+<body>
+	<header>
+		<h1></i>Stinger <span>Sight Words</span><i class="fas fa-book-reader"></i></h1>
+	</header>
+
+	<div id='directions' class='badge'>click + begin</div>
+
+	<div id='sneaky' style='opacity: 0;'>Become a sight word master ...</div>
+
+    <ul id='grid' class='clear' style='opacity: 0;'>
+    	<li>
+    		<div class='hexagon'></div>
+    	</li>
+    	<li>
+    		<div class='hexagon'></div>
+    	</li>
+    	<li>
+    		<div class='hexagon'></div>
+    	</li>
+    	<li>
+    		<div class='hexagon'></div>
+    	</li>
+    	<li>
+    		<div class='hexagon'></div>
+    	</li>
+    	<li>
+    		<div class='hexagon'></div>
+    	</li>
+    	<li>
+    		<div class='hexagon'></div>
+    	</li>
+    	<li>
+    		<div class='hexagon'></div>
+    	</li>
+    	<li>
+    		<div class='hexagon'></div>
+    	</li>
+    	<li>
+    		<div class='hexagon'>
+    			<p id='level1' style='opacity: 0;'>1</p>
+    		</div>
+    	</li>
+    	<li>
+    		<div class='hexagon'>
+    			<p id='level2' style='opacity: 0;'>2</p>
+    		</div>
+    	</li>
+    	<li>
+    		<div class='hexagon'>
+    			<p id='level3' style='opacity: 0;'>3</p>
+    		</div>
+    	</li>
+    </ul>
+
+<script>
+	var sneaky = document.getElementById('sneaky');
+
+	setTimeout( function(){
+		/*sneaky.style.display = 'block';*/
+		sneaky.style.opacity = '1';
+	}, 1000 );
+
+	var grid = document.getElementById('grid');
+
+	setTimeout( function(){
+		grid.style.opacity = '1';
+	}, 2000);
+
+	var level1 = document.getElementById('level1');
+	var level2 = document.getElementById('level2');
+	var level3 = document.getElementById('level3');
+
+	setTimeout( function(){
+		level1.style.opacity = '1';
+	}, 3000);
+
+	setTimeout( function(){
+		level2.style.opacity = '1';
+	}, 4000);
+
+	setTimeout( function(){
+		level3.style.opacity = '1';
+	}, 5000);
+
+</script>
+</body>
+</html>
