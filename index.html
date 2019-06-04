@@ -9,6 +9,7 @@
 	<script src="https://kit.fontawesome.com/cf4adf0ae9.js"></script>
 </head>
 <body>
+
 	<header>
 		<h1></i>Stinger <span>Sight Words</span><i class="fas fa-book-reader"></i><div id='directions' class='badge'><p>click + begin</p></div></h1>
 	</header>
@@ -45,17 +46,17 @@
 	    	</li>
 	    	<li>
 	    		<div class='hexagon'>
-	    			<p id='level1' style='opacity: 0;'>1</p>
+	    			<a href='' target='_blank'><p id='level1' style='opacity: 0;'>1</p></a>
 	    		</div>
 	    	</li>
 	    	<li>
 	    		<div class='hexagon'>
-	    			<p id='level2' style='opacity: 0;'>2</p>
+	    			<a href='' target='_blank'><p id='level2' style='opacity: 0;'>2</p></a>
 	    		</div>
 	    	</li>
 	    	<li>
 	    		<div class='hexagon'>
-	    			<p id='level3' style='opacity: 0;'>3</p>
+	    			<a href='' target='_blank'><p id='level3' style='opacity: 0;'>3</p></a>
 	    		</div>
 	    	</li>
 	    </ul>
@@ -66,33 +67,32 @@
 	    	</div>
 	    	<i class='fas fa-user-edit' id='parent'></i>
 	    	<div id='bubble' class='filter-drop-shadow'>
-	    		<p>Keep practices short, sweet + enjoyable!</p>
+	    		<p>Keep practices short, sweet + enjoyable! ~10min.</p>
 	    	</div>
 	    	<i class='fas fa-chalkboard-teacher' id='teacher'></i>
 	    </div>
-
 
 	    <footer>2019 Elizabeth Harkins 
 	    	<a href='mailto:eeharkins@henrico.k12.va.us?Subject=Hello%20again target='_top'><i class='far fa-paper-plane'></i></a>
 	    </footer>
 
 <script>
-	var sneaky = document.getElementById('sneaky');
+
+	const sneaky = document.getElementById('sneaky');
 
 	setTimeout( function(){
-		/*sneaky.style.display = 'block';*/
 		sneaky.style.opacity = '1';
 	}, 1000 );
 
-	var grid = document.getElementById('grid');
+	const grid = document.getElementById('grid');
 
 	setTimeout( function(){
 		grid.style.opacity = '1';
 	}, 2000);
 
-	var level1 = document.getElementById('level1');
-	var level2 = document.getElementById('level2');
-	var level3 = document.getElementById('level3');
+	const level1 = document.getElementById('level1');
+	const level2 = document.getElementById('level2');
+	const level3 = document.getElementById('level3');
 
 	setTimeout( function(){
 		level1.style.opacity = '1';

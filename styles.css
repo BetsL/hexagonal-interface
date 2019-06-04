@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Asap:400,500,700&display=swap');
 
-/** {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}*/
-
 html {
 	background: orange;
 	height: 100%;
@@ -19,7 +13,6 @@ body {
     	justify-content: center;
     	align-items: center;
     	flex-flow: row wrap;
-    /*height: 66vh;*/
     height: 100%;
     margin: 0;
     padding: 0;
@@ -82,31 +75,24 @@ h1 span {
 }
 
 #grid {
-	/*height: 100%;
-	width: 90%;*/
-
 	border-top: 1px solid #944;
 	border-right: 1px solid #944;
-
-	/*height: 600px;*/
-	height: auto;
-	width: 400px;
-	/*width: 75%;*/
-	margin: 175px 75px 20px 65px;
-	padding: 70px 25px 0 25px;
-	/*padding: 0;*/
+	box-shadow: 0 0 10px 1px #944;
 	box-sizing: border-box;
+	height: auto;
 	justify-content: center;
+	width: 400px;
+	margin: 175px 85px 10px 95px;
+	padding: 70px 25px 0 25px;
+	
 	-webkit-transition: opacity 1s;
 	transition: opacity 1s;
-	
 	
 	-webkit-transform: perspective(600px) rotateX(60deg);
 	-moz-transform: perspective(600px) rotateX(60deg);
 	-ms-transform: perspective(600px) rotateX(60deg);
 	-o-transform: perspective(600px) rotateX(60deg);
 	transform: perspective(600px) rotateX(60deg);
-	
 	
 	z-index: 1;
 }
@@ -141,25 +127,26 @@ h1 span {
 }
 
 #grid li .hexagon {
+	background-color: #facc6b;
+	background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%);
+	box-shadow: 0 0 10px 1px #944;
+
 	position: absolute;
 		top: 0;
 		left: 0;
 	width: 100%;
 	height: 100%;
 
+	overflow: hidden;
+
 	-o-transform: skewY(-30deg) rotate(60deg);
     -moz-transform: skewY(-30deg) rotate(60deg);
     -webkit-transform: skewY(-30deg) rotate(60deg);
     -ms-transform: skewY(-30deg) rotate(60deg);
-	transform: skewY(-30deg) rotate(60deg);
-
-	overflow: hidden;
-	background-color: #facc6b;
-	background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%);
+	transform: skewY(-30deg) rotate(60deg);	
 }
 
 p {
-	/*color: #e2584d;*/
 	color: #24272e;
 	font-family: Asap, sans-serif;
 	font-size: 28px;
@@ -177,13 +164,9 @@ p {
 }
 
 #grid li:hover {
-	cursor: pointer;
 	background-color: #118ab2;
 	background-image: linear-gradient(319deg, #118ab2 0%, #06d6a0 37%, #ffd166 100%);
-}
-
-#grid:first-child {
-	background: green;
+	cursor: pointer;
 }
 
 #grid li:nth-child(3n+2) {
@@ -206,16 +189,10 @@ p {
 }
 
 #bubble-container {
+	background-color: #febb68;
+	border-radius: 1px;
 	box-shadow: 0 0 10px 1px #944;
 	height: 500px;
-	background-color: #febb68;
-	/*
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	*/
-	border-radius: 1px;
-	/*padding: 30px;
-	margin: auto 50px;*/
 	margin: 50px;
 	margin-bottom: 25px;
 	padding: 50px;
@@ -223,68 +200,16 @@ p {
 	z-index: 3;
 }
 
-/*
-#line {
-	color: skyblue;
-	display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-    z-index: 0;
-}
-*/
-
-#question-bubble {
-	height: 75px;
-	width: 75px;
-	padding: 50px 60px 0 60px;
-	position: relative;
-	z-index: 2;
+#bubble {
 	border-radius: 30px;
 	background: rgba(255,255,255,85);
 	box-shadow: 0 0 10px 1px #944;
-	margin: 15px auto 55px 50px;
-}
-
-#bubble {
-	/*height: 200px;
-	width: 200px;*/
 	height: 75px;
+	margin: 55px 50px 15px auto;
 	width: 75px;
 	padding: 50px 60px 0 60px;
 	position: relative;
 	z-index: 10;
-	border-radius: 30px;
-	background: rgba(255,255,255,85);
-	box-shadow: 0 0 10px 1px #944;
-	margin: 55px 50px 15px auto;
-}
-
-#question-bubble:after {
-	
-	bottom: 0;
-	content: '';
-	margin-left: -10px;
-	margin-bottom: -20px;
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-top: 85px solid rgba(255,255,255,85);
-	border-right: 85px solid transparent;
-	border-left: 0px solid transparent;
-
-	
-	
-	border: 20px solid transparent;
-	border-right-color: rgba(255,255,255,85);
-	border-left: 0;
-	border-top: 0;
-	margin-top: -10px;
-	margin-left: -20px;
 }
 
 #bubble:after {
@@ -310,7 +235,6 @@ p {
 	margin-bottom: -20px;
 }
 
-#question-bubble p,
 #bubble p {
 	color: #944;
 	font-family: Asap, sans-serif;
@@ -326,17 +250,6 @@ p {
     -moz-filter: drop-shadow(0 10px 1px #944);
     filter: drop-shadow(0 10px 1px #944);
     }
-
-/*
-#parent {
-	border: 5px solid #944;
-	border-radius: 50%;
-	color: #944;
-	font-size: 18px;
-	margin: 8px 175px 0 0;
-	padding: 16px;
-}
-*/
 
 #parent,
 #teacher {
