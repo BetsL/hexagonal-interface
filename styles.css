@@ -302,7 +302,7 @@ footer a {
 
 /* ---------- MEDIA QUERIES ---------- */
 
-
+/*
 @media only screen and (max-width: 479px) {
 	header {
     	padding: 8px 0 8px 18px;
@@ -338,7 +338,7 @@ footer a {
 		left: 5%;
 	text-align: center;
 	text-transform: none;
-	-webkit-transition: opacity 1s; /* for safari and iphone */
+	-webkit-transition: opacity 1s;
 	transition: opacity 1s;
 	}
 
@@ -415,7 +415,7 @@ footer a {
 	}
 
 }
-
+*/
 
 @media only screen and (min-width: 1030px) {
 	header {
