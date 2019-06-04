@@ -87,8 +87,8 @@ h1 span {
 
 	/*height: 600px;*/
 	height: auto;
-	/*width: 400px;*/
-	width: 75%;
+	width: 400px;
+	/*width: 75%;*/
 	margin: 175px 75px 20px 65px;
 	padding: 20px 25px 0 25px;
 	padding: 0;
@@ -202,19 +202,6 @@ p {
 	transform: translateX(50%) rotate(-60deg) skewY(30deg);
 }
 
-footer {
-	background-color: #e2584d;
-	border-radius: 3%;
-	color: #ffc04c;
-	font-family: Asap, sans-serif;
-	font-size: 8px
-	margin: 30px;
-	padding: 30px;
-	position: sticky;
-	width: 100%;
-	z-index: 2;
-}
-
 #container {
 	height: 500px;
 	background-color: #febb68;
@@ -242,7 +229,7 @@ footer {
 	left: 0;
 	width: 0;
 	height: 0;
-	border-top: 85px solid rgba(255,255,255,0.85);
+	border-top: 85px solid rgba(255,255,255,85);
 	border-right: 85px solid transparent;
 	border-left: 0px solid transparent;
 }
@@ -263,6 +250,31 @@ footer {
     filter: drop-shadow(0 10px 1px #944);
     }
 
+footer {
+	background-color: #e2584d;
+	border-radius: 8px;
+	color: #ffc04c;
+	display: flex;
+		justify-content: center;
+		align-items: space-around;
+		flex-flow: row wrap;
+	font-family: Asap, sans-serif;
+	font-size: 8px
+	margin: 30px;
+	padding: 30px;
+	position: sticky;
+	width: 80%;
+	z-index: 2;
+}
+
+.far {
+	padding: 0 8px;
+}
+
+footer a {
+	color: #ffc04c;
+	text-decoration: none;
+}
 
 
 
