@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Asap:400,500,700&display=swap');
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 html {
 	background: orange;
 	height: 100%;
@@ -20,6 +26,20 @@ body {
     padding: 0;
     text-transform: uppercase;
 }
+
+.page {
+	margin: 0 auto;
+	/*
+	display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row wrap;
+	margin: 0 auto;
+	height: 100vh;
+	width: 80%;
+	*/
+}
+
 
 /* ---------- HEADER ---------- */
 
@@ -72,13 +92,15 @@ h1 span {
 
 /* ---------- CONTENT ---------- */
 
+/*
 .container {
 	display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-flow: row wrap;
-	/*width: 100%;*/
+	width: 100%;
 }
+*/
 
 #sneaky {
 	color: #f5f5f5;
@@ -107,6 +129,9 @@ h1 span {
 	padding: 70px 25px 0 25px;
 	
 	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s
+	-o-transition: opacity 1s;
 	transition: opacity 1s;
 	
 	-webkit-transform: perspective(600px) rotateX(60deg);
@@ -291,18 +316,16 @@ p {
 footer {
 	background-color: #e2584d;
 	border: 2px solid #944;
-	border-radius: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
 	color: #ffc04c;
 	display: flex;
 		justify-content: flex-start;
-		align-items: space-around;
+		align-items: center;
 		flex-flow: row wrap;
 	font-family: Asap, sans-serif;
 	font-size: 8px
-	margin: 0 30px;
-	padding: 30px;
 	/*position: sticky;*/
-	width: 100%;
 	/*z-index: 2;*/
 }
 

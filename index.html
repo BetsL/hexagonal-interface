@@ -1,120 +1,154 @@
 <!doctype html>
-<html>
+<html class="no-js" lang="">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Hexagonal Grid</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script src="https://kit.fontawesome.com/cf4adf0ae9.js"></script>
+  <meta charset="utf-8">
+  <title>Hexagonal Grid</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/cf4adf0ae9.js"></script>
+
+
+  <meta name="theme-color" content="#fafafa">
 </head>
+
 <body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
 
-	<header>
-		<h1>Stinger <span>Sight Words</span>
-			<i class="fas fa-book-reader"></i>
-			<div id='directions' class='badge'>
-				<p>click + begin</p>
-			</div>
-		</h1>
-	</header>
+  <!-- Add your site or application content here -->
 
-	<div class='container'>
+  <div class='page'>
 
-		<div id='sneaky' style='opacity: 0;'>Become a sight word master ...</div>
+    <header>
+      <h1>Stinger <span>Sight Words</span>
+        <i class="fas fa-book-reader"></i>
+        <div id='directions' class='badge'>
+          <p>click + begin</p>
+        </div>
+      </h1>
+    </header>
 
-	    <ul id='grid' class='clear' style='opacity: 0;'>
-	    	<li>
-	    		<div class='hexagon'></div>
-	    	</li>
-	    	<li>
-	    		<div class='hexagon'></div>
-	    	</li>
-	    	<li>
-	    		<div class='hexagon'></div>
-	    	</li>
-	    	<li>
-	    		<div class='hexagon'></div>
-	    	</li>
-	    	<li>
-	    		<div class='hexagon'></div>
-	    	</li>
-	    	<li>
-	    		<div class='hexagon'></div>
-	    	</li>
-	    	<li>
-	    		<div class='hexagon'></div>
-	    	</li>
-	    	<li>
-	    		<div class='hexagon'></div>
-	    	</li>
-	    	<li>
-	    		<div class='hexagon'></div>
-	    	</li>
-	    	<li>
-	    		<div class='hexagon'>
-	    			<a href='' target='_blank'><p id='level1' style='opacity: 0;'>1</p></a>
-	    		</div>
-	    	</li>
-	    	<li>
-	    		<div class='hexagon'>
-	    			<a href='' target='_blank'><p id='level2' style='opacity: 0;'>2</p></a>
-	    		</div>
-	    	</li>
-	    	<li>
-	    		<div class='hexagon'>
-	    			<a href='' target='_blank'><p id='level3' style='opacity: 0;'>3</p></a>
-	    		</div>
-	    	</li>
-	    </ul>
+    <div class='container'>
 
-	    <div id='bubble-container'>
-	    	<div id='bubble' class='filter-drop-shadow'>
-	    		<p>How much practice is appropriate?</p>
-	    	</div>
-	    	<i class='fas fa-user-edit' id='parent'></i>
-	    	<div id='bubble' class='filter-drop-shadow'>
-	    		<p>Keep practices short, sweet + enjoyable! ~10min.</p>
-	    	</div>
-	    	<i class='fas fa-chalkboard-teacher' id='teacher'></i>
-	    </div>
+      <div id='sneaky' style='opacity: 0;'>Become a sight word master ...</div>
 
-	    <footer>2019 Elizabeth Harkins 
-	    	<a href='mailto:eeharkins@henrico.k12.va.us?Subject=Hello%20again target='_top'><i class='far fa-paper-plane'></i></a>
-	    </footer>
+        <ul id='grid' class='clear' style='opacity: 0;'>
+          <li>
+            <div class='hexagon'></div>
+          </li>
+          <li>
+            <div class='hexagon'></div>
+          </li>
+          <li>
+            <div class='hexagon'></div>
+          </li>
+          <li>
+            <div class='hexagon'></div>
+          </li>
+          <li>
+            <div class='hexagon'></div>
+          </li>
+          <li>
+            <div class='hexagon'></div>
+          </li>
+          <li>
+            <div class='hexagon'></div>
+          </li>
+          <li>
+            <div class='hexagon'></div>
+          </li>
+          <li>
+            <div class='hexagon'></div>
+          </li>
+          <li>
+            <div class='hexagon'>
+              <a href='' target='_blank'><p id='level1' style='opacity: 0;'>1</p></a>
+            </div>
+          </li>
+          <li>
+            <div class='hexagon'>
+              <a href='' target='_blank'><p id='level2' style='opacity: 0;'>2</p></a>
+            </div>
+          </li>
+          <li>
+            <div class='hexagon'>
+              <a href='' target='_blank'><p id='level3' style='opacity: 0;'>3</p></a>
+            </div>
+          </li>
+        </ul>
 
-	</div>
+        <div id='bubble-container'>
+          <div id='bubble' class='filter-drop-shadow'>
+            <p>How much practice is appropriate?</p>
+          </div>
+          <i class='fas fa-user-edit' id='parent'></i>
+          <div id='bubble' class='filter-drop-shadow'>
+            <p>Keep practices short, sweet + enjoyable! ~10min.</p>
+          </div>
+          <i class='fas fa-chalkboard-teacher' id='teacher'></i>
+        </div>
 
-<script>
+        <footer>2019 Elizabeth Harkins 
+          <a href='mailto:eeharkins@henrico.k12.va.us?Subject=Hello%20again target='_top'><i class='far fa-paper-plane'></i></a>
+        </footer>
 
-	const sneaky = document.getElementById('sneaky');
+    </div>
 
-	setTimeout( function(){
-		sneaky.style.opacity = '1';
-	}, 1000 );
+  </div>
 
-	const grid = document.getElementById('grid');
+  <script>
 
-	setTimeout( function(){
-		grid.style.opacity = '1';
-	}, 2000);
+    const sneaky = document.getElementById('sneaky');
 
-	const level1 = document.getElementById('level1');
-	const level2 = document.getElementById('level2');
-	const level3 = document.getElementById('level3');
+    setTimeout( function(){
+      sneaky.style.opacity = '1';
+    }, 1000 );
 
-	setTimeout( function(){
-		level1.style.opacity = '1';
-	}, 3000);
+    const grid = document.getElementById('grid');
 
-	setTimeout( function(){
-		level2.style.opacity = '1';
-	}, 4000);
+    setTimeout( function(){
+      grid.style.opacity = '1';
+    }, 2000);
 
-	setTimeout( function(){
-		level3.style.opacity = '1';
-	}, 5000);
+    const level1 = document.getElementById('level1');
+    const level2 = document.getElementById('level2');
+    const level3 = document.getElementById('level3');
 
-</script>
+    setTimeout( function(){
+      level1.style.opacity = '1';
+    }, 3000);
+
+    setTimeout( function(){
+      level2.style.opacity = '1';
+    }, 4000);
+
+    setTimeout( function(){
+      level3.style.opacity = '1';
+    }, 5000);
+
+  </script>
+  
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
 </body>
 </html>
