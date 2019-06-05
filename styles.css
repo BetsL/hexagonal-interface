@@ -25,11 +25,17 @@ body {
 
 header {
 	background: #f5f5f5;
+	border: 5px solid #d3d3d3;
+	border-radius: 25px;
+	display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-flow: row wrap;
     margin: 0;
     padding: 10px 0 10px 20px;
     position: fixed;
     top: 20px;
-    width: 100%;
+    width: 90%;
     z-index: 2;
 }
 
@@ -43,14 +49,17 @@ h1 span {
 	color: skyblue;
 }
 
+/*
 .fas {
-	padding: 0 10px;
+	padding: 0 8px;
 }
+*/
 
 #directions {
+	/*border: 2px solid #944;*/
 	position: absolute;
-		top: 50%;
-		right: 35px;
+		top: 48%;
+		left: 435px;
 }
 
 .badge p {
@@ -58,12 +67,18 @@ h1 span {
 	color: white;
 	font-family: Asap, sans-serif;
 	font-size: 12px;
-	padding: 4px 10px;
-	text-align: center;
-	
+	padding: 4px 10px;	
 }
 
 /* ---------- CONTENT ---------- */
+
+.container {
+	display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row wrap;
+	/*width: 100%;*/
+}
 
 #sneaky {
 	color: #f5f5f5;
@@ -275,19 +290,20 @@ p {
 
 footer {
 	background-color: #e2584d;
+	border: 2px solid #944;
 	border-radius: 8px;
 	color: #ffc04c;
 	display: flex;
-		justify-content: center;
+		justify-content: flex-start;
 		align-items: space-around;
 		flex-flow: row wrap;
 	font-family: Asap, sans-serif;
 	font-size: 8px
 	margin: 0 30px;
 	padding: 30px;
-	position: sticky;
-	width: 80%;
-	z-index: 2;
+	/*position: sticky;*/
+	width: 100%;
+	/*z-index: 2;*/
 }
 
 .far {
@@ -302,7 +318,7 @@ footer a {
 
 /* ---------- MEDIA QUERIES ---------- */
 
-/*
+
 @media only screen and (max-width: 479px) {
 	header {
     	padding: 8px 0 8px 18px;
@@ -334,7 +350,7 @@ footer a {
 	margin: 10px;
 	padding: 20px;
 	position: absolute;
-		top: 15%;
+		top: 20%;
 		left: 5%;
 	text-align: center;
 	text-transform: none;
@@ -410,12 +426,12 @@ footer a {
 	margin: 0 30px;
 	padding: 20px;
 	position: sticky;
-	width: 75%;
+	width: 80%;
 	z-index: 2;
 	}
 
 }
-*/
+
 
 @media only screen and (min-width: 1030px) {
 	header {
