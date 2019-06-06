@@ -115,34 +115,32 @@ textarea {
 
 html {
   background: orange;
+  font-size: 16px;
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 body {
-    background: orange;
-    display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
+  background: orange;
+  /*display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;*/
+  border: 1px solid red;
+  font-size: 1em;
+  font-family: 'Asap', sans-serif;
+  line-height: 1.3;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .page {
-  margin: 0 auto;
-  /*
   display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
-  margin: 0 auto;
-  height: 100vh;
-  width: 80%;
-  */
+    flex-flow: row wrap; 
 }
 
 
@@ -153,15 +151,20 @@ header {
   border: 5px solid #d3d3d3;
   border-radius: 25px;
   display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    margin: 0;
-    padding: 10px 0 10px 20px;
-    position: fixed;
+  /*margin-top: 20px;*/
+  padding: 10px 0 10px 20px;
+  position: fixed;
+    top: 20px;
+  width: 90%;
+  z-index: 2;
+  /*position: absolute;
     top: 20px;
     width: 90%;
     z-index: 2;
+  text-align: left;*/
 }
 
 header > h1 {
@@ -174,17 +177,17 @@ h1 span {
   color: skyblue;
 }
 
-/*
+
 .fas {
-  padding: 0 8px;
+  padding: 0 11px;
 }
-*/
+
 
 #directions {
   /*border: 2px solid #944;*/
-  position: absolute;
-    top: 48%;
-    left: 435px;
+  position: fixed;
+    top: 12.5%;
+    left: 75%;
 }
 
 .badge p {
@@ -195,17 +198,16 @@ h1 span {
   padding: 4px 10px;  
 }
 
+
 /* ---------- CONTENT ---------- */
 
-/*
 .container {
   display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-  width: 100%;
+  padding: 50px;
 }
-*/
 
 #sneaky {
   color: #f5f5f5;
