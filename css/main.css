@@ -356,7 +356,7 @@ h1 span {
   margin: 10px;
   padding: 20px;
   position: absolute;
-    top: 25%;
+    top: 30%;
     left: 5%;
   text-align: center;
   text-transform: none;
@@ -537,9 +537,25 @@ footer a {
       visibility: hidden;
     }
 
+    #sneaky {
+      color: #f5f5f5;
+      font-family: Asap, sans-serif;
+      font-size: 1.5em;
+      margin: 10px;
+      padding: 20px;
+      position: absolute;
+        top: 20%;
+        left: 5%;
+      text-align: center;
+      text-transform: none;
+      -webkit-transition: opacity 1s; /* for safari and iphone */
+      transition: opacity 1s;
+    }
+
     #grid {
       border: none;
       box-shadow: none;
+      margin: 135px 85px 10px 95px;
       transform: none;
       z-index: 1;
     }
@@ -587,7 +603,7 @@ footer a {
     }
 
     #grid {
-      margin: 125px 85px 10px 95px;
+      margin: 135px 85px 10px 95px;
       padding: 30px 25px 0 25px;
       width: 300px;
     }
