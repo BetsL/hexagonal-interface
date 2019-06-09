@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Hexagonal Grid</title>
+  <title>Stinger Sight Words</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,9 +27,12 @@
   <!-- Add your site or application content here -->
 
 <div id='lightbox-container' onclick='hideLightbox()'>
+
   <div id='overlay'></div>
   <div id='lightbox'>
+
     <div id='hide'>x</div>
+
       <div class='bubble-container'>
         <div class='first-bubble'>
           <div id='bubble' class='filter-drop-shadow'>
@@ -45,6 +48,7 @@
         </div>
         <a href='http://blogs.henrico.k12.va.us/eeharkins/files/2019/02/Sight-Word-Assessment.pdf' target='_blank'>Sight Word Checklist</a>
       </div>
+
   </div>
 </div>
 
@@ -109,22 +113,6 @@
             </div>
           </li>
         </ul>
-        <!--
-        <div id='bubble-container'>
-          <div class='first-bubble'>
-              <div id='bubble' class='filter-drop-shadow'>
-                <p>How much practice is appropriate?</p>
-              </div>
-              <i class='fas fa-user-edit' id='parent'></i>
-          </div>
-          <div class='second-bubble'>
-              <div id='bubble' class='filter-drop-shadow'>
-                <p>Keep practices short, sweet + enjoyable! ~10min.</p>
-              </div>
-              <i class='fas fa-chalkboard-teacher' id='teacher'></i>
-          </div>
-        </div>
-      -->
 
     </div>
 
@@ -136,7 +124,7 @@
 
   <script>
 
-    var lightbox = document.getElementById('lightbox-container');
+    const lightbox = document.getElementById('lightbox-container');
 
     function showLightbox(){
       lightbox.style.display = 'block';

@@ -131,59 +131,51 @@ body {
   text-transform: uppercase;
 }
 
+.page {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap; 
+}
+
+/* ---------- LIGHTBOX ---------- */
+
 #lightbox-container {
   color: #24272e;
   position: fixed;
-  text-align: center;
-  left: 0px;
-  top: 0px;
+    text-align: center;
+    left: 0px;
+    top: 0px;
   width: 100%;
   height: 100%;
 
   z-index: 3;
-
 }
 
 #overlay {
   background: rgba(33,33,33,0.8);
   position: absolute;
-  left: 0px;
-  top: 0px;
+    left: 0px;
+    top: 0px;
   width: 100%;
   height: 100%;
 }
 
 #lightbox {
-  
-  width: 400px;
   height: 300px;
-  /*background-color: #f8f7f3;*/
-  border-radius: 5px;
   padding: 20px;
-
-  position: relative;
-
   display: inline-block;
-  /*margin-top: 20px;*/
-  
   background-color: #febb68;
-  border-radius: 1px;
   box-shadow: 0 0 10px 1px #944;
   display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-  /*height: 550px;*/
-  /*width: 500px;*/
   width: 90%;
   margin: auto;
   margin-top: 25px;
-  /*margin: 25px auto;*/
-  /*padding: 50px auto;*/
   z-index: 3;
-
   position: relative;
-  /*background: #00aabb;*/
   border-radius: .4em;
 }
 
@@ -215,7 +207,6 @@ body {
 }
 
 .bubble-container {
-  /*border-left: 1px solid #944;*/
   display: flex;
     justify-content: center;
     align-items: center;
@@ -227,10 +218,9 @@ body {
 .first-bubble,
 .second-bubble {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  /*margin: 20px 75px;*/
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
   margin: 20px;
 }
 
@@ -264,7 +254,6 @@ body {
   border-left: 0px solid transparent;
 
   border: 20px solid transparent;
-  /*border-top-color: #00aabb;*/
   border-top: 20px solid rgba(255,255,255,85);
   border-bottom: 0;
   border-right: 0;
@@ -290,28 +279,16 @@ body {
 
 #parent,
 #teacher {
-  /*border: 5px solid #944;
-  border-radius: 50%;*/
   color: #944;
   font-size: 1.5em;
-  /*margin: 8px 0 0 225px;*/
   margin-left: 39px;
   padding: 16px;
 }
-
-.page {
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap; 
-}
-
 
 /* ---------- HEADER ---------- */
 
 .stripe {
   background-color: #24272e;
-  /*height: 20px;*/
   height: 1.66em;
   position: fixed;
     top: 50px;
@@ -335,7 +312,7 @@ header {
 
 header > h1 {
   color: #24272E;
-  font-family: Asap, sans-serif;
+  font-family: 'Asap', sans-serif;
   font-size: 1.5em;
   text-align: center;
 }
@@ -361,7 +338,6 @@ h1 span {
   font-size: 12px;
   padding: 4px 10px;  
 }
-
 
 /* ---------- CONTENT ---------- */
 
@@ -507,14 +483,11 @@ p {
   transform: translateX(50%) rotate(-60deg) skewY(30deg);
 }
 
-
 /* ---------- FOOTER ---------- */
 
 footer {
   background-color: #e2584d;
   border: 2px solid #944;
-  /*border-top-left-radius: 8px;
-  border-top-right-radius: 8px;*/
   color: #ffc04c;
   display: flex;
     justify-content: flex-start;
@@ -525,8 +498,6 @@ footer {
   margin: 0;
   padding: 25px;
   width: 98%;
-  /*position: sticky;*/
-  /*z-index: 2;*/
 }
 
 .far {
@@ -555,6 +526,61 @@ footer a {
     #lightbox a {
       color: #fff;
       text-transform: none;
+    }
+
+    #direction {
+      visibility: hidden;
+    }
+
+    .badge p {
+      visibility: hidden;
+    }
+
+    #grid {
+      border: none;
+      box-shadow: none;
+      box-sizing: border-box;
+      height: auto;
+      justify-content: center;
+      width: 375px;
+      margin: 150px 85px 10px 95px;
+      padding: 40px 25px 0 25px;
+      
+      -webkit-transition: opacity 1s;
+      -moz-transition: opacity 1s;
+      -ms-transition: opacity 1s
+      -o-transition: opacity 1s;
+      transition: opacity 1s;
+      /*
+      -webkit-transform: perspective(600px) rotateX(60deg);
+      -moz-transform: perspective(600px) rotateX(60deg);
+      -ms-transform: perspective(600px) rotateX(60deg);
+      -o-transform: perspective(600px) rotateX(60deg);
+      transform: perspective(600px) rotateX(60deg);
+      */
+
+      transform: none;
+      z-index: 1;
+    }
+
+    #grid li .hexagon {
+      background-color: #facc6b;
+      background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%);
+      box-shadow: none;
+
+      position: absolute;
+        top: 0;
+        left: 0;
+      width: 100%;
+      height: 100%;
+
+      overflow: hidden;
+
+      -o-transform: skewY(-30deg) rotate(60deg);
+      -moz-transform: skewY(-30deg) rotate(60deg);
+      -webkit-transform: skewY(-30deg) rotate(60deg);
+      -ms-transform: skewY(-30deg) rotate(60deg);
+      transform: skewY(-30deg) rotate(60deg); 
     }
 }
 
