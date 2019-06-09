@@ -26,6 +26,28 @@
 
   <!-- Add your site or application content here -->
 
+<div id='lightbox-container' onclick='hideLightbox()'>
+  <div id='overlay'></div>
+  <div id='lightbox'>
+    <div id='hide'>x</div>
+      <div class='bubble-container'>
+        <div class='first-bubble'>
+          <div id='bubble' class='filter-drop-shadow'>
+            <p>How much practice is appropriate?</p>
+          </div>
+          <i class='fas fa-user-edit' id='parent'></i>
+        </div>
+        <div class='second-bubble'>
+          <div id='bubble' class='filter-drop-shadow'>
+            <p>Keep practices short + sweet ~10min.</p>
+          </div>
+          <i class='fas fa-chalkboard-teacher' id='teacher'></i>
+        </div>
+        <a href='http://blogs.henrico.k12.va.us/eeharkins/files/2019/02/Sight-Word-Assessment.pdf' target='_blank'>Sight Word Checklist</a>
+      </div>
+  </div>
+</div>
+
   <div class='page'>
 
     <div class='stripe'></div>
@@ -87,7 +109,7 @@
             </div>
           </li>
         </ul>
-
+        <!--
         <div id='bubble-container'>
           <div class='first-bubble'>
               <div id='bubble' class='filter-drop-shadow'>
@@ -102,6 +124,7 @@
               <i class='fas fa-chalkboard-teacher' id='teacher'></i>
           </div>
         </div>
+      -->
 
     </div>
 
@@ -110,6 +133,24 @@
     </footer>
 
   </div>
+
+  <script>
+
+    var lightbox = document.getElementById('lightbox-container');
+
+    function showLightbox(){
+      lightbox.style.display = 'block';
+    }
+
+    function hideLightbox(){
+      lightbox.style.display = 'none';
+    }
+
+    document.getElementById('window').onpageload = showLightbox;
+    document.getElementById('hide').onclick = hideLightbox;
+    document.getElementById('overlay').onclick = hideLightbox;
+
+  </script>
 
   <script>
 
