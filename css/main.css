@@ -544,7 +544,7 @@ footer a {
       margin: 10px;
       padding: 20px;
       position: absolute;
-        top: 20%;
+        top: 15%;
         left: 5%;
       text-align: center;
       text-transform: none;
@@ -555,7 +555,7 @@ footer a {
     #grid {
       border: none;
       box-shadow: none;
-      margin: 135px 85px 10px 95px;
+      margin: 145px 85px 10px 95px;
       transform: none;
       z-index: 1;
     }
@@ -597,13 +597,13 @@ footer a {
     #sneaky {
       font-size: 1em;
       position: absolute;
-        top: 35%;
+        top: 30%;
         left: 5%;
       text-align: left;
     }
 
     #grid {
-      margin: 135px 85px 10px 95px;
+      margin: 140px 85px 10px 95px;
       padding: 30px 25px 0 25px;
       width: 300px;
     }
