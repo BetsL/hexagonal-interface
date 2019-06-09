@@ -327,7 +327,7 @@ h1 span {
 
 #directions {
   position: fixed;
-    top: 11%;
+    top: 2.8em;
     left: 85%;
 }
 
@@ -529,7 +529,7 @@ footer a {
       text-transform: none;
     }
 
-    #direction {
+    #directions {
       visibility: hidden;
     }
 
@@ -566,7 +566,7 @@ footer a {
 
     #directions {
       position: fixed;
-        top: 11%;
+        top: 2.5em;
         left: 90%;
     }
 
@@ -606,6 +606,12 @@ footer a {
       padding: 40px;
       width: 80%;
     }
+
+    #directions {
+      position: fixed;
+        top: 3em;
+        left: 85%;
+    }
 }
   
 @media only screen and (min-width: 768px) {
@@ -635,7 +641,7 @@ footer a {
 
     #directions {
       position: fixed;
-        top: 13%;
+        top: 2.5em;
         left: 80%;
     }
 
@@ -681,7 +687,7 @@ footer a {
 
     #directions {
       position: fixed;
-        top: 13%;
+        top: 2.5em;
         left: 75%;
     }
 
