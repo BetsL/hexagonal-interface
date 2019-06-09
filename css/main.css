@@ -356,7 +356,7 @@ h1 span {
   margin: 10px;
   padding: 20px;
   position: absolute;
-    top: 30%;
+    top: 7em;
     left: 5%;
   text-align: center;
   text-transform: none;
@@ -544,7 +544,7 @@ footer a {
       margin: 10px;
       padding: 20px;
       position: absolute;
-        top: 15%;
+        /*top: 15%;*/
         left: 5%;
       text-align: center;
       text-transform: none;
@@ -555,7 +555,7 @@ footer a {
     #grid {
       border: none;
       box-shadow: none;
-      margin: 145px 85px 10px 95px;
+      margin: 135px 85px 10px 95px;
       transform: none;
       z-index: 1;
     }
@@ -597,13 +597,13 @@ footer a {
     #sneaky {
       font-size: 1em;
       position: absolute;
-        top: 30%;
+        /*top: 30%;*/
         left: 5%;
       text-align: left;
     }
 
     #grid {
-      margin: 140px 85px 10px 95px;
+      margin: 135px 85px 10px 95px;
       padding: 30px 25px 0 25px;
       width: 300px;
     }
@@ -664,8 +664,8 @@ footer a {
     #sneaky {
       font-size: 1.66em;
       position: absolute;
-        top: 30%;
-        left: 10%;
+        /*top: 30%;*/
+        left: 15%;
       text-align: left;
     }
 
@@ -710,7 +710,7 @@ footer a {
     #sneaky {
       font-size: 1.66em;
       position: absolute;
-        top: 30%;
+        /*top: 30%;*/
         left: 20%;
       text-align: left;
     }
