@@ -334,7 +334,10 @@ h1 span {
 .badge p {
   background-color: #e2584d;
   color: white;
-  font-family: Asap, sans-serif;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  font-family: 'Asap', sans-serif;
   font-size: 12px;
   padding: 4px 10px;
 }
