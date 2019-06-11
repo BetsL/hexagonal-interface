@@ -7,7 +7,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
- 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -135,7 +135,7 @@ body {
   display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap; 
+    flex-flow: row wrap;
 }
 
 /* ---------- LIGHTBOX ---------- */
@@ -230,7 +230,7 @@ body {
   box-shadow: 0 0 10px 1px #944;
   height: 100px;
   width: 150px;
-  
+
   margin: 20px 40px 40px 20px;
   padding: 50px 60px 0 60px;
   margin: auto;
@@ -336,7 +336,7 @@ h1 span {
   color: white;
   font-family: Asap, sans-serif;
   font-size: 12px;
-  padding: 4px 10px;  
+  padding: 4px 10px;
 }
 
 /* ---------- CONTENT ---------- */
@@ -374,19 +374,19 @@ h1 span {
   width: 375px;
   margin: 150px 85px 10px 95px;
   padding: 40px 25px 0 25px;
-  
+
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
   -ms-transition: opacity 1s
   -o-transition: opacity 1s;
   transition: opacity 1s;
-  
+
   -webkit-transform: perspective(600px) rotateX(60deg);
   -moz-transform: perspective(600px) rotateX(60deg);
   -ms-transform: perspective(600px) rotateX(60deg);
   -o-transform: perspective(600px) rotateX(60deg);
   transform: perspective(600px) rotateX(60deg);
-  
+
   z-index: 1;
 }
 
@@ -414,7 +414,7 @@ h1 span {
     transform: rotate(-60deg) skewY(30deg);
 
     /*background: #fd005f; -- no b. needed as element != visible*/
-    
+
     overflow: hidden;
     visibility: hidden;
 }
@@ -438,7 +438,7 @@ h1 span {
   -moz-transform: skewY(-30deg) rotate(60deg);
   -webkit-transform: skewY(-30deg) rotate(60deg);
   -ms-transform: skewY(-30deg) rotate(60deg);
-  transform: skewY(-30deg) rotate(60deg); 
+  transform: skewY(-30deg) rotate(60deg);
 }
 
 p {
@@ -529,6 +529,15 @@ footer a {
       text-transform: none;
     }
 
+    .bubble-container {
+      border-left: none;
+    }
+
+    #parent,
+    #teacher {
+      padding-top: 20px;
+    }
+
     #directions {
       visibility: hidden;
     }
@@ -591,7 +600,7 @@ footer a {
       display: flex;
         justify-content: center;
         align-items: center;
-      padding: 4px 6px;  
+      padding: 4px 6px;
     }
 
     #sneaky {
@@ -629,7 +638,7 @@ footer a {
         left: 85%;
     }
 }
-  
+
 @media only screen and (min-width: 768px) {
 
     .stripe {
@@ -745,7 +754,7 @@ footer a {
       font-family: Asap, sans-serif;
       font-size: 12px;
       padding: auto 0;
-      margin: auto 0;  
+      margin: auto 0;
 
       display: flex;
         justify-content: flex-start;
@@ -835,7 +844,7 @@ footer a {
   clear: both;
 }
 
- 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -853,7 +862,7 @@ footer a {
     /* Style adjustments for high resolution devices */
 }
 
- 
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -929,5 +938,3 @@ footer a {
         page-break-after: avoid;
     }
 }
-
-
