@@ -1,52 +1,70 @@
 
 /* ---------- GENERAL ---------- */
 
+html {
+  height: 66%;
+  padding: 3em;
+}
+
 body {
-  font-family: 'Helvetica', sans-serif;
-  margin: 50px;
+  color: #fff;
+  background-color: #fff;
+      font-family: 'Helvetica', sans-serif;
+      font-size: 18px;
+      /* height: 100%; */
+      /* height: 100%; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.3;
+      margin: 6em;
+      padding: 0;
 }
 
 /* ---------- MESSAGE ---------- */
 
 #sneaky {
-  color: #a9a9a9;
-  margin-top: 20px;
-  padding: 20px;
-  padding-bottom: 30px;
+  color: #00838f;
+  font-size: 1.8em;
+/* margin-top: 1.1em; */
+padding-bottom: 3em;
+/*text-shadow: 2px 2px 5px #000;*/
 }
 
 #sneaky span {
-  font-size: 20px;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
 /* ---------- DISPLAY/HEXAGON ---------- */
 
 .container {
-  border: 5px solid #00cccc;
-  border-radius: 8px;
-  display: flex;
+  background-color: #fff;
+    /* border: 1px solid #d6d9dc; */
+    border: 5px solid #00838f;
+    border-radius: 8px;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-  height: 100%;
-  /*margin: 35px auto;
-  padding: 25px;*/
-  margin: 2em auto;
-  padding: 2em;
-  text-align: center;
-  width: 80%;
+    text-align: center;
+    padding: 12em 14em;
 }
 
 #hexagon {
-  background-color: #00cccc;
+  background-color: #00838f;
+  background-size: 300px 300px
   color: white;
   display: flex;
     justify-content: center;
     align-items: center;
-  font-size: 32px;
+
+
+  font-size: 2em;
   height: 173.21px;
-  margin: 86.60px 0;
+  margin: 86.60px auto;
+  padding: 0;
   position: relative;
   text-align: center;
   width: 300px;
@@ -63,59 +81,91 @@ body {
 
 #hexagon:before {
   bottom: 100%;
-  border-bottom: 86.60px solid #00cccc;
+  border-bottom: 86.60px solid #00838f;
 }
 
 #hexagon:after {
   top: 100%;
   width: 0;
-  border-top: 86.60px solid #00cccc;
-  /*border-top: 86.60px solid #48cfad;*/
+  border-top: 86.60px solid #00838f;
 }
 
 #hexagon p {
+  color: #fff;
   display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-  font-size: 32px;
+  font-size: 1.2em;
   font-family: 'Helvetica', sans-serif;
   text-align: center;
 }
+
+
+/*
+#hexagon {
+  position: relative;
+  width: 300px;
+  height: 173.21px;
+  background-color: #64C7CC;
+  margin: 86.60px 0;
+}
+
+#hexagon:before,
+#hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+}
+
+#hexagon:before {
+  bottom: 100%;
+  border-bottom: 86.60px solid #64C7CC;
+}
+
+#hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 86.60px solid #64C7CC;
+}
+*/
 
 /* ---------- BUTTONS ---------- */
 
 .wrapper {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-top: 3em;
 }
 
 #start,
 #stop {
   background-color: #fff;
-  border: 3px solid #d3d3d3;
+  border: 3px solid #00838f;
+  color: #00838f;
   border-radius: 5px;
   font-size: 20px;
   margin: 20px;
   margin-top: 30px;
   outline-style: none;
-  padding: 11px;
+  padding: 1em;
   position: sticky;
   transition: all 0.3s ease;
 }
 
 .green-glow {
-  /*border; 8px solid #4dcc7d;*/
-  border: 8px solid green;
-  box-shadow: 0 0 10px #31b43a;
+  border: 8px solid #4dcc7d;
+  /*border: 8px solid green;*/
+  box-shadow: 0 0 20px #31b43a;
 }
 
 .red-glow {
   border: 4px solid #fc121b;
-  box-shadow: 0 0 10px #d01115;
+  box-shadow: 0 0 20px #d01115;
 }
 
 /* ---------- MEDIA QUERIES ---------- */
