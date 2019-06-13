@@ -1,9 +1,13 @@
 
 setTimeout( function(){
-  document.getElementById('sneaky').style.display = 'block';}, 5000 );
+  document.getElementById('sneaky').style.display = 'block';}, 2000 );
 
 var els = document.querySelectorAll('#hexagon'),
-	words = ['am', 'at', 'can', 'go', 'is', 'me', 'my', 'see', 'the', 'to', 'up', 'we', 'and', 'do', 'got', 'had', 'has', 'he', 'his', 'in', 'it', 'like', 'look', 'on', 'are', 'come', 'did', 'for', 'get', 'have', 'here', 'him', 'of', 'play', 'said', 'she', 'will', 'you', 'all', 'down', 'saw', 'that', 'they', 'this', 'was', 'went', 'when', 'where', 'with', 'what'],
+	words = ['am', 'at', 'can', 'go', 'is', 'me', 'my', 'see', 'the', 'to', 'up', 'we',
+  'and', 'do', 'got', 'had', 'has', 'he', 'his', 'in', 'it', 'like', 'look', 'on', 'are',
+  'come', 'did', 'for', 'get', 'have', 'here', 'him', 'of', 'play', 'said', 'she', 'will',
+  'you', 'all', 'down', 'saw', 'that', 'they', 'this', 'was', 'went', 'when', 'where', 'with',
+  'what'],
 	ms = 1500,
 	interval;
 

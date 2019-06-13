@@ -30,8 +30,10 @@ body {
     align-items: center;
     flex-flow: column;
   height: 100%;
-  margin: 35px auto;
-  padding: 25px;
+  /*margin: 35px auto;
+  padding: 25px;*/
+  margin: 2em auto;
+  padding: 2em;
   text-align: center;
   width: 80%;
 }
