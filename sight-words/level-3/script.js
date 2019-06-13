@@ -8,7 +8,7 @@ var els = document.querySelectorAll('#hexagon'),
   'went', 'men', 'read', 'need', 'land', 'different', 'home', 'us', 'move',
   'try', 'kind', 'hand', 'picture', 'again', 'change', 'off', 'play', 'spell',
   'air', 'away', 'animals', 'house', 'point', 'page', 'letters', 'mother',
-  'answer', 'found', 'study', 'still', 'learn', 'should', 'America', 'world'],
+  'answer', 'continent', 'found', 'study', 'still', 'learn', 'should', 'America', 'world'],
 	ms = 1500,
 	interval;
 
