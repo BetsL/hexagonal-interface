@@ -3,9 +3,12 @@ setTimeout( function(){
   document.getElementById('sneaky').style.display = 'block';}, 2000 );
 
 var els = document.querySelectorAll('#hexagon'),
-	words = ['day', 'get', 'give', 'her', 'new', 'out', 'over', 'she', 'then', 'want', 'were', 'your', 'nice', 'from', 'after', 'good', 'little', 'made', 'make',
-  'off', 'old', 'rain', 'ride', 'some', 'tell', 'them', 'because', 'favorite', 'didn\'t', 'house', 'how', 'night', 'people', 'pretty', 'us', 'very', 'who', 'why', 'friend', 'eat',
-  'again', 'could', 'does', 'every', 'laugh', 'many', 'walk', 'don\'t', 'neat', 'boat'],
+	words = ['small', 'set', 'put', 'end', 'does', 'another', 'well', 'large',
+  'must', 'big', 'even', 'such', 'because', 'turn', 'here', 'why', 'asked',
+  'went', 'men', 'read', 'need', 'land', 'different', 'home', 'us', 'move',
+  'try', 'kind', 'hand', 'picture', 'again', 'change', 'off', 'play', 'spell',
+  'air', 'away', 'animals', 'house', 'point', 'page', 'letters', 'mother',
+  'answer', 'found', 'study', 'still', 'learn', 'should', 'America', 'world'],
 	ms = 1500,
 	interval;
 
