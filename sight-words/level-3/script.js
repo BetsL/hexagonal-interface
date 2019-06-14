@@ -1,6 +1,6 @@
 
 setTimeout( function(){
-  document.getElementById('sneaky').style.display = 'block';}, 2000 );
+  document.getElementById('sneaky').style.display = 'block';}, 4000 );
 
 var els = document.querySelectorAll('#hexagon'),
 	words = ['small', 'set', 'put', 'end', 'does', 'another', 'well', 'large',

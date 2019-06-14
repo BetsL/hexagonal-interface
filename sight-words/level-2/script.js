@@ -1,6 +1,6 @@
 
 setTimeout( function(){
-  document.getElementById('sneaky').style.display = 'block';}, 2000 );
+  document.getElementById('sneaky').style.display = 'block';}, 3000 );
 
 var els = document.querySelectorAll('#hexagon'),
 	words = ['day', 'get', 'give', 'her', 'new', 'out', 'over', 'she', 'then', 'want', 'were', 'your', 'nice', 'from', 'after', 'good', 'little', 'made', 'make',
