@@ -1,0 +1,164 @@
+
+/* ---------- GENERAL ---------- */
+
+html {
+  height: 66%;
+  padding: 3em;
+}
+
+body {
+  color: #fff;
+  background-color: #fff;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  line-height: 1.3;
+  margin: 6em;
+  padding: 0;
+}
+
+/* ---------- MESSAGE ---------- */
+
+#sneaky {
+  color: #ee7600;
+  font-size: 1.8em;
+  padding-bottom: 3em;
+}
+
+#sneaky span {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* ---------- DISPLAY/HEXAGON ---------- */
+
+.container {
+  background-color: #fff;
+  border: 5px solid #ee7600;
+  border-radius: 8px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  text-align: center;
+  padding: 12em 14em;
+}
+
+#hexagon {
+  background-color: #ee7600;
+  background-size: 300px 300px
+  color: white;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  font-size: 2em;
+  height: 173.21px;
+  margin: 86.60px auto;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 300px;
+}
+
+#hexagon:before,
+#hexagon:after {
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  content: "";
+  position: absolute;
+  width: 0;
+}
+
+#hexagon:before {
+  bottom: 100%;
+  border-bottom: 86.60px solid #ee7600;
+}
+
+#hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 86.60px solid #ee7600;
+}
+
+#hexagon p {
+  color: #fff;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  font-size: 1.2em;
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-top: 3em;
+}
+
+#start,
+#stop {
+  background-color: #fff;
+  border: 3px solid #ee7600;
+  border-radius: 5px;
+  color: #ee7600;
+  font-size: 20px;
+  margin: 20px;
+  margin-top: 30px;
+  outline-style: none;
+  padding: 1em;
+  position: sticky;
+  transition: all 0.3s ease;
+}
+
+.green-glow {
+  border: 8px solid #4dcc7d;
+  /*border: 8px solid green;*/
+  box-shadow: 0 0 20px #31b43a;
+}
+
+.red-glow {
+  border: 4px solid #fc121b;
+  box-shadow: 0 0 20px #d01115;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media only screen and (min-width: 240px) and (max-width: 350px) {
+
+  .container {
+      border: none;
+  }
+
+  .wrapper {
+      display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: row wrap;
+      padding-top: 10px;
+  }
+
+  #start,
+  #stop {
+      background-color: #fff;
+      border: 3px solid #d3d3d3;
+      border-radius: 5px;
+      font-size: 20px;
+      margin: 10px;
+      margin-top: 30px;
+      outline-style: none;
+      padding: 8px;
+      position: sticky;
+      transition: all 0.3s ease;
+  }
+}

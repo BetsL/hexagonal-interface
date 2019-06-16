@@ -1,12 +1,12 @@
 
 setTimeout( function(){
-  document.getElementById('sneaky').style.display = 'block';}, 3000 );
+  document.getElementById('sneaky').style.display = 'block';}, 2000 );
 
 var els = document.querySelectorAll('#hexagon'),
 	words = ['day', 'get', 'give', 'her', 'new', 'out', 'over', 'she', 'then', 'want', 'were', 'your', 'nice', 'from', 'after', 'good', 'little', 'made', 'make',
   'off', 'old', 'rain', 'ride', 'some', 'tell', 'them', 'because', 'favorite', 'didn\'t', 'house', 'how', 'night', 'people', 'pretty', 'us', 'very', 'who', 'why', 'friend', 'eat',
   'again', 'could', 'does', 'every', 'laugh', 'many', 'walk', 'don\'t', 'neat', 'boat'],
-	ms = 1500,
+	ms = 2500,
 	interval;
 
 function start(els, words, ms){

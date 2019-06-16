@@ -89,9 +89,13 @@
             <div class='hexagon'></div>
           </li>
           <li>
-            <div class='hexagon'></div>
+            <a href='sight-words/level-4/index.html' target='_blank'>
+              <div class='hexagon'>
+                <p id='level4' style='opacity: 0;'>4</p>
+              </div>
+            </a>
           </li>
-          <li>
+           <li>
             <div class='hexagon'></div>
           </li>
           <li>
@@ -163,6 +167,7 @@
     const level1 = document.getElementById('level1');
     const level2 = document.getElementById('level2');
     const level3 = document.getElementById('level3');
+    const level4 = document.getElementById('level4');
 
     setTimeout( function(){
       level1.style.opacity = '1';
@@ -175,6 +180,10 @@
     setTimeout( function(){
       level3.style.opacity = '1';
     }, 5000);
+
+    setTimeout( function(){
+      level4.style.opacity = '1';
+    }, 6000);
 
   </script>
 

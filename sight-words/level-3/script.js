@@ -1,6 +1,6 @@
 
 setTimeout( function(){
-  document.getElementById('sneaky').style.display = 'block';}, 4000 );
+  document.getElementById('sneaky').style.display = 'block';}, 2000 );
 
 var els = document.querySelectorAll('#hexagon'),
 	words = ['small', 'set', 'put', 'end', 'does', 'another', 'well', 'large',
@@ -9,7 +9,7 @@ var els = document.querySelectorAll('#hexagon'),
   'try', 'kind', 'hand', 'picture', 'again', 'change', 'off', 'play', 'spell',
   'air', 'away', 'animals', 'house', 'point', 'page', 'letters', 'mother',
   'answer', 'continent', 'found', 'study', 'still', 'learn', 'should', 'America', 'world'],
-	ms = 1500,
+	ms = 2500,
 	interval;
 
 function start(els, words, ms){
