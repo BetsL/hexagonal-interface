@@ -12,9 +12,9 @@ body {
   font-family: 'Helvetica', sans-serif;
   font-size: 18px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   line-height: 1.3;
   margin: 6em;
   padding: 0;
@@ -23,7 +23,7 @@ body {
 /* ---------- MESSAGE ---------- */
 
 #sneaky {
-  color: #00838f;
+  color: #b1eff5;
   font-size: 1.8em;
   padding-bottom: 3em;
 }
@@ -37,7 +37,7 @@ body {
 
 .container {
   background-color: #fff;
-  border: 5px solid #00838f;
+  border: 5px solid #b1eff5;
   border-radius: 8px;
   display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@ body {
 }
 
 #hexagon {
-  background-color: #00838f;
+  background-color: #b1eff5;
   background-size: 300px 300px
   color: white;
   display: flex;
@@ -76,13 +76,13 @@ body {
 
 #hexagon:before {
   bottom: 100%;
-  border-bottom: 86.60px solid #00838f;
+  border-bottom: 86.60px solid #b1eff5;
 }
 
 #hexagon:after {
   top: 100%;
   width: 0;
-  border-top: 86.60px solid #00838f;
+  border-top: 86.60px solid #b1eff5;
 }
 
 #hexagon p {
@@ -109,9 +109,9 @@ body {
 #start,
 #stop {
   background-color: #fff;
-  border: 3px solid #00838f;
-  color: #00838f;
+  border: 3px solid #b1eff5;
   border-radius: 5px;
+  color: #b1eff5;
   font-size: 20px;
   margin: 20px;
   margin-top: 30px;
@@ -151,7 +151,7 @@ body {
   #start,
   #stop {
       background-color: #fff;
-      border: 3px solid #00838f;
+      border: 3px solid #b1eff5;
       border-radius: 5px;
       font-size: 20px;
       margin: 10px;
