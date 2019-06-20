@@ -138,25 +138,6 @@
 
   <script>
 
-      document.onreadystatechange = function(){//window.addEventListener('readystatechange',function(){...}); (for Netscape) and window.attachEvent('onreadystatechange',function(){...}); (for IE and Opera) also work
-        if(document.readyState=='loaded' || document.readyState=='complete'){
-    
-          var age = prompt('How old are you?');
-
-          if (Number(age) < 5){
-            alert('Ask someone in your family to read these words with you. Try Level 1.');
-          } else if (Number(age) > 5){
-            alert('Wow, how many words do you know? You might want to start with Level 2.');
-          } else if (Number(age) === 5){
-            alert('I hope you are ready to learn about sight words. Start with Level 1.');
-          }
-        }  
-      }
-
-  </script>
-
-  <script>
-
     const lightbox = document.getElementById('lightbox-container');
 
     function showLightbox(){
